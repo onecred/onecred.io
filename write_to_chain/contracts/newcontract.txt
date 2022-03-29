@@ -1,0 +1,13 @@
+// contract MyOrgDatabase {
+//   struct Organization {
+//     address _where;
+//     string _name;
+//   }
+//   Organization[] public availableOrgs;
+//   address public owner = msg.sender;
+
+//   function addOrg(address _where, string _name) {
+//     require(msg.sender == owner);
+//     availableOrgs.push(Organization(_where, _name));
+//   }
+// }
