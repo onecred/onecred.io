@@ -16,31 +16,24 @@
       <img>
       <center><img class="logo" src="images/logo/LogoFullColor.png"/>
       <p>
-      <form>
-        <section>  <label for="fname">First name:</label><br>
-          <input type="text" id="fname" name="fname"><br>
-          <button class = "submit submit--fname"> Submit </button>
-        </section>
-        <br>
-        <section>  <label for="lname">Last name:</label><br>
-          <input type="text" id="lname" name="lname"><br>
-          <button class = "submit submit--lname"> Submit </button>
-        </section>
-        <br>
-        <section>  <label for="email">Email Address</label><br>
-          <input type="email" id="email" name="email"><br>
-          <button class = "submit submit--email"> Submit </button>
-        </section>
-        <br>
-        <section>  <label for="band">Favorite Band?</label><br>
-          <input type="text" id="band" name="band"><br>
-          <button class = "submit submit--band"> Submit </button>
-        </section>
-        <br>
-        <section>  <label for="age">How old are you?</label><br>
-          <input type="number" id="age" name="age"><br>
-          <button class = "submit submit--age"> Submit </button>
-        </section>
+        <div class='wrapper'>
+          <form id='enterInfo'>
+          <div class='form-info'>
+              <label id='firstName' for='firstName'>Enter your first name</label>
+              <input id='firstNameField' type='text' maxlength='25'></input>
+              <br>
+              <label id='lastName' for='lastName'>Enter your last name</label>
+              <input id='lastNameField' type='text' maxlength='25'></input>
+              <br>
+          </div>
+          <div class='form-sub'>
+              <button id='subButton' type='button'>Print your name!</button>
+          </div>
+          </form>
+          
+          <div>
+              <p id='result'></p></div>
+          </div>
   
             </form>
     </main>
