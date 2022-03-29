@@ -1,6 +1,7 @@
 'use strict';
 
-const subName = document.querySelector('.submit--name')
+const subFName = document.querySelector('.submit--fname')
+const subLName = document.querySelector('.submit--lname')
 const subEmail = document.querySelector('.submit--email')
 const subBand = document.querySelector('.submit--band')
 const subAge = document.querySelector('.submit--age')
@@ -8,8 +9,12 @@ const subAge = document.querySelector('.submit--age')
 
 
 
-subName.addEventListener('click', function(){
-  console.log('Name');
+subFName.addEventListener('click', function(){
+  console.log('First Name');
+});
+
+subLName.addEventListener('click', function(){
+  console.log('Last Name');
 });
 
 subEmail.addEventListener('click', function(){
