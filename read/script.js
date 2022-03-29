@@ -5,7 +5,8 @@ let getName = function () {
   let lastNameField = document.getElementById('lastName').value;
   let result = document.getElementById('result');
 
+  console.log(firstNameField, lastNameField, result);
 
+  result.textContent = 'Your name is' +firstNameField + lastNameField;
 };
 
-console.log(firstNameField, lastNameField, result);
