@@ -22,3 +22,14 @@ web3.eth.getBlockNumber(function (error, result) {
 
 // const txData = web3.eth.getTransaction('0xa7f5a91cd33079fde912f17bb469ff6349fde89eadd2092fa1cc32d6f45dfe4b').then(console.log);
 
+const input = document.createElement('input');
+input.setAttribute('type', 'text');
+input.setAttribute('id', 'submit');
+document.body.appendChild(input);
+
+document.getElementById("tx").addEventListener("click", myFunction);
+
+  function myFunction() {
+    const txData = web3.eth.getTransaction('0xa7f5a91cd33079fde912f17bb469ff6349fde89eadd2092fa1cc32d6f45dfe4b').then(console.log);
+    document.getElementById("tx").textContent = txData;
+  }

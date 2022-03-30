@@ -12,22 +12,18 @@
   </head>
   <body>
     <main>
-      <script src="read/script.js"></script>
+      
       <br>
       <img>
       <center><img class="logo" src="images/logo/LogoFullColor.png"/>
       <p>
        
         <p id="tx">Enter Transaction</p>
+        <script src="read/script.js">
 
-  <script>
-  document.getElementById("tx").addEventListener("click", myFunction);
-
-  function myFunction() {
-    const txData = web3.eth.getTransaction('0xa7f5a91cd33079fde912f17bb469ff6349fde89eadd2092fa1cc32d6f45dfe4b').then(console.log);
-    document.getElementById("tx").innerHTML = txData;
-  }
-  </script>
+    <button class="ipt input">Input</button>
+        </script>
+ 
   
             </form>
     </main>
