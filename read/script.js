@@ -10,16 +10,14 @@ web3.eth.getBlockNumber(function (error, result) {
     console.log(result)
   })
 
-
+let tx = document.getElementById('transIDinput').value;
 
 
 let enterTX = function () {
-  
-
-  let tx = document.getElementById('transIDinput').value;
-
+ 
   web3.eth.getTransaction(tx).then(console.log);
 
   return tx;
 };
 
+console.log(enterTX(tx));
