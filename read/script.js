@@ -11,5 +11,15 @@ web3.eth.getBlockNumber(function (error, result) {
   })
 
 
-web3.eth.getTransaction('0x9fc76417374aa880d4449a1f7f31ec597f00b1f6f3dd2d66f4c9c6c445836d8b§234')
-.then(console.log);
+
+
+let enterTX = function () {
+  
+
+  let tx = document.getElementById('transIDinput').value;
+
+  web3.eth.getTransaction(tx).then(console.log);
+
+  return tx;
+};
+
