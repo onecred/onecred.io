@@ -17,23 +17,15 @@
       <img>
       <center><img class="logo" src="images/logo/LogoFullColor.png"/>
       <p>
-        <div class='wrapper'>
-          <form id='enterInfo'>
-          <div class='form-info'>
-              <label id='transID' for='transID'>Enter the transaction</label>
-              <input id='transIDinput' type='text' maxlength='25'></input>
-              <br>
-              
-          
-          <div class='form-sub'>
-              <button id='subButton' type='button'>Submit</button>
-          </div>
-        </div>
-          </form>
-          
-          <div>
-              <p id='result'></p></div>
-          </div>
+        <p id="tx">Enter</p>
+
+        <script>
+        document.getElementById("demo").addEventListener("click", myFunction);
+        
+        function myFunction() {
+          document.getElementById("demo").innerHTML = "YOU CLICKED ME!";
+        }
+        </script>
   
             </form>
     </main>

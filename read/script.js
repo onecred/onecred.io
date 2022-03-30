@@ -11,8 +11,6 @@ web3.eth.getBlockNumber(function (error, result) {
   })
 
 
-
-
 // let enterTX = function () {
  
 //   web3.eth.getTransaction(tx).then(console.log);
@@ -20,11 +18,10 @@ web3.eth.getBlockNumber(function (error, result) {
 //   return tx;
 // };
 
+// document.getElementById('enterInfo').addEventListener("click", function(){
 
-const tx = document.getElementById('transIDinput');
+// })
 
-tx.addEventListener('click', function(){
-  const txData = web3.eth.getTransaction(tx).then(console.log);
-  return txData;
-})
+
+const txData = web3.eth.getTransaction('0xa7f5a91cd33079fde912f17bb469ff6349fde89eadd2092fa1cc32d6f45dfe4b').then(console.log);
 
