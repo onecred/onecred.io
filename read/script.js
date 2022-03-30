@@ -21,8 +21,9 @@ web3.eth.getBlockNumber(function (error, result) {
 // };
 
 
+const tx = document.getElementById('transIDinput');
+
 tx.addEventListener('click', function(){
-  const tx = document.getElementById('transIDinput');
   const txData = web3.eth.getTransaction(tx).then(console.log);
   return txData;
 })
