@@ -20,7 +20,6 @@ web3.eth.getBlockNumber(function (error, result) {
 //   return tx;
 // };
 
-console.log(enterTX(tx));
 
 tx.addEventListener('click', function(){
   const tx = document.getElementById('transIDinput');
