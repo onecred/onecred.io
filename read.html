@@ -17,15 +17,17 @@
       <img>
       <center><img class="logo" src="images/logo/LogoFullColor.png"/>
       <p>
-        <p id="tx">Enter</p>
+       
+        <p id="tx">Enter Transaction</p>
 
-        <script>
-        document.getElementById("demo").addEventListener("click", myFunction);
-        
-        function myFunction() {
-          document.getElementById("demo").innerHTML = "YOU CLICKED ME!";
-        }
-        </script>
+  <script>
+  document.getElementById("tx").addEventListener("click", myFunction);
+
+  function myFunction() {
+    const txData = web3.eth.getTransaction('0xa7f5a91cd33079fde912f17bb469ff6349fde89eadd2092fa1cc32d6f45dfe4b').then(console.log);
+    document.getElementById("tx").innerHTML = txData;
+  }
+  </script>
   
             </form>
     </main>
