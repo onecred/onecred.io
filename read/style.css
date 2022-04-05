@@ -1,10 +1,18 @@
 main {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: floralwhite;
+    background-repeat: repeat;
 }
 
 
-
-.logoImg {
+.logo {
     align-items: center;
-    size-adjust: 10%;
+    width: 50%;
+    height: 50%;
+}
+
+
+.btn {
+    align-items: center;
+    size-adjust: 200%;
 }

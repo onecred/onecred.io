@@ -8,10 +8,16 @@ web3.eth.getBlockNumber(function (error, result) {
     console.log(result)
   })
 
-const submitButton = document.getElementById('submitButton');
 
-const logoImg = document.getElementById('logo');
-console.log(logoImg);
+const logoImg = document.querySelector('logo')
+
+const submitButton = document.getElementById('submitButton')
+
+
+
+submitButton.setAttribute('type', 'text');
+submitButton.setAttribute('id', 'submit');
+document.body.appendChild(submitButton);
 
 // let enterTX = function () {
  
@@ -32,11 +38,7 @@ console.log(logoImg);
 // input.setAttribute('id', 'submit');
 // document.body.appendChild(input);
 
-// const submitBtn = document.createElement('button');
-// submitBtn.innerHTML = 'Submit2';
-// submitBtn.setAttribute('type', 'text');
-// submitBtn.setAttribute('id', 'submit');
-// document.body.appendChild(submitBtn);
+
 
 
 // submitButton.addEventListener('click', function(){
