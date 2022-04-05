@@ -9,48 +9,27 @@ web3.eth.getBlockNumber(function (error, result) {
   })
 
 
-const logoImg = document.querySelector('logo')
-
-const submitButton = document.getElementById('submitButton')
 
 
 
+// const returnTX = function (tx) {
+//     const txData = web3.eth.getTransaction('tx').then(console.log);
+//     document.getElementById("tx").textContent = txData;
+//   }
 
 
 
-// let enterTX = function () {
- 
-//   web3.eth.getTransaction(tx).then(console.log);
-
-//   return tx;
-// };
-
-// clickableText.addEventListener('click', function () {
-//   console.log(4);
-// })
-
-// const txData = web3.eth.getTransaction('0xa7f5a91cd33079fde912f17bb469ff6349fde89eadd2092fa1cc32d6f45dfe4b').then(console.log);
-
-
-const input = document.createElement('input');
-input.setAttribute('type', 'text');
-input.setAttribute('id', 'submit');
-document.body.appendChild(input);
+// document.querySelector(".submit--button").addEventListener("click", function({
+//   const tx = document.querySelector('')
+// }));
 
 
 
-
-submitButton.addEventListener('click', function(){
-  console.log(`test`);
-  return 4;
-})
+// let txData = web3.eth.getTransaction('tx')
 
 
-document.getElementById("submit--button").addEventListener("click", myFunction);
-
-  function myFunction() {
-    const txData = web3.eth.getTransaction('0xa7f5a91cd33079fde912f17bb469ff6349fde89eadd2092fa1cc32d6f45dfe4b').then(console.log);
-    document.getElementById("tx").textContent = txData;
-  }
-
-
+document.querySelector('.submit--button').addEventListener('click', function(){
+  // const tx = String (document.querySelector('.txInput').value);
+  // const txData = web3.eth.getTransaction('tx').then(console.log);
+  console.log(web3.eth.getTransaction('0xf0bbe45be1e7c22a1c1d2ab0dbdd9bbdfa02c20123d73f21d3d29b8ee81e0af2'));
+});
